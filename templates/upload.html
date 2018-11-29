@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Please enter a photo of a dog to determine breed of</h1>
+      <form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+        <input type=file name=photo>
+        <input type="submit">
+      </form>
+    </body>
+</html>
