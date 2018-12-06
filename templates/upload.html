@@ -9,5 +9,11 @@
         <input type=file name=photo>
         <input type="submit">
       </form>
+    {% if breed %}
+    <h2>Your dog is a {{ breed }}</h2>
+    {% elif error %}
+    <h2>Unable to determine breed</h2>
+    {% endif %}
+
     </body>
 </html>
